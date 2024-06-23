@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify-Lets music</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="brand"><img src="https://www.freepnglogos.com/uploads/spotify-logo-png/spotify-logo-spotify-symbol-3.png">Spotify</li>
+            <li class="m">Home</li>
+            <li class="m">About</li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="songList">
+            <h1>Songs List</h1>
+            <div class="songItemContainer">
+                <div class="songItem">
+                    <img src="https://filmfare.wwmindia.com/thumb/content/2022/apr/arijitsingh11650885572.jpg?width=1200&height=900" alt="1">
+                    <span>Tum hi ho</span>
+                    <span class="songlistplay"><span class="time">5:32</span><i class="fas fa-circle-play"></i></span>
+                </div>
+                <div class="songItem">
+                    <img src="https://sosimg.sgp1.cdn.digitaloceanspaces.com/artist-gallery/5759780_1682396505.jpg" alt="2">
+                    <span>Pehle bhi</span>
+                    <span class="songlistplay"><span class="time">4:22</span><i class="fas fa-circle-play"></i></span>
+                </div>
+                <div class="songItem">
+                    <img src="https://filmfare.wwmindia.com/thumb/content/2022/jun/toptensongsofjubinnautiyalyoumustlistentoonhisbirthday11655189119.jpg?width=1200&height=900" alt="1">
+                    <span>Humnava</span>
+                    <span class="songlistplay"><span class="time">5:32</span><i class="fas fa-circle-play"></i></span>
+                </div>
+                <div class="songItem">
+                    <img src="https://static.toiimg.com/thumb/imgsize-23456,msid-81588757,width-600,resizemode-4/81588757.jpg" alt="1">
+                    <span>Tera Zikr</span>
+                    <span class="songlistplay"><span class="time">5:32</span><i class="fas fa-circle-play"></i></span>
+                </div>
+                <div class="songItem">
+                    <img src="https://static.toiimg.com/thumb/msid-80172462,width-400,resizemode-4/80172462.jpg" alt="1">
+                    <span>Pehli Dafa</span>
+                    <span class="songlistplay"><span class="time">5:32</span><i class="fas fa-circle-play"></i></span>
+                </div>
+                <div class="songItem">
+                    <img src="https://images.indianexpress.com/2021/05/arijit-singh-1200.jpg" alt="1">
+                    <span>Satranga</span>
+                    <span class="songlistplay"><span class="time">5:32</span><i class="fas fa-circle-play"></i></span>
+                </div>
+                <div class="songItem">
+                    <img src="https://www.bollywoodhungama.com/wp-content/uploads/2022/06/10-of-KK%E2%80%99s-best-songs-that-will-remain-as-evergreen-memories-of-the-singer-1.jpg" alt="1">
+                    <span>Dil Ibadat</span>
+                    <span class="songlistplay"><span class="time">5:32</span><i class="fas fa-circle-play"></i></span>
+                </div>
+                <div class="songItem">
+                    <img src="https://cdn.siasat.com/wp-content/uploads/2023/10/arijit-singh.jpg" alt="1">
+                    <span>Pal Pal</span>
+                    <span class="songlistplay"><span class="time">5:32</span><i class="fas fa-circle-play"></i></span>
+                </div>
+                <div class="songItem">
+                    <img src="https://c.saavncdn.com/artists/Udit_Narayan_500x500.jpg" alt="1">
+                    <span>Tere Naam</span>
+                    <span class="songlistplay"><span class="time">5:32</span><i class="fas fa-circle-play"></i></span>
+                </div>
+                <div class="songItem">
+                    <img src="https://static.toiimg.com/thumb/msid-38976312,width-1070,height-580,imgsize-41272,resizemode-75,overlay-toi_sw,pt-32,y_pad-40/photo.jpg" alt="1">
+                    <span>Love Dose</span>
+                    <span class="songlistplay"><span class="time">5:32</span><i class="fas fa-circle-play"></i></span>
+                </div>
+                
+
+            </div>
+            </div>
+        </div>
+        <div class="songBanner"></div>
+    </div>
+    <div class="bottom">
+        <input type="range" name="range" id="myProgressBar" min="0" max="100">
+        <div class="icons">
+            <i class="fas fa-2x fa-regular fa-backward"></i>
+            <i class="fas fa-2x fa-circle-play" id="masterPlay"></i>
+            <i class="fas fa-2x fa-regular fa-forward"></i>
+        </div>
+        <div class="songInfo">
+             <img src="https://i.gifer.com/5uwq.gif" width="42px" alt="" >Tum Hi Ho-Arijit Singh
+        </div>  
+    </div>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Sedan+SC&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Sedan+SC&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap');
+    *{
+        margin:0;
+        padding:0;
+    }
+    body{
+        background-color: antiquewhite;
+    }
+    nav{
+        font-family: "Hind", sans-serif;
+    }
+    nav ul{
+        display: flex;
+        align-items: center;
+        list-style-type: none;
+        height:65px;
+        background-color: black;
+        color:white;
+    }
+    nav ul li{
+        padding:0 12px;
+        cursor:pointer;
+    }
+    .m:hover{
+        color:rgb(83, 230, 83);
+    }
+    .container{
+        min-height: 70vh;
+        background-color: black;
+        color:white;
+        font-family: "Varela Round", sans-serif;
+        display: flex;
+        margin: 23px auto;
+        width:70%;
+        border-radius: 12px;
+        padding:34px;
+        background-image:url('https://images.unsplash.com/photo-1453090927415-5f45085b65c0?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZGFyayUyMGJhY2tncm91bmQlMjBtdXNpY3xlbnwwfHwwfHx8MA%3D%3D');
+    }
+    .brand img{
+        width:44px;
+        height:40px;
+        padding:0 8px;
+    }
+    .brand{
+        display: flex;
+        align-items: center;
+        font-weight: bolder;
+        font-size: 1.5rem;
+    }
+    .bottom{
+        position:sticky;
+        height:100px;
+        background-color: black;
+        bottom:0;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        flex-direction: column;
+    }
+    .icons{
+        margin-top: 15px;
+    }
+    .icons i:hover{
+        cursor:pointer;
+        color:rgb(93, 93, 182);
+    }
+    .icons i{
+        padding:15px;
+    }
+    #myProgressBar{
+        width:80vw;
+        cursor: pointer;
+    }
+    .songItemContainer{
+        margin-top: 74px;
+    }
+    .songItem{
+          height:50px;
+          display: flex;
+          background-color: whitesmoke;
+          color:black;
+          margin:12px 0;
+          justify-content: center;
+          align-items: center;
+          border-radius: 34px;
+    }
+    .songItem img{
+         width: 43px;
+         margin:0 23px;
+         border-radius: 34px;
+    }
+    .songInfo{
+        position: absolute;
+        left:10vw;
+        font-family: "Varela Round", sans-serif;
+    }
+    .time{
+        margin: 0 23px;
+        
+    }
+    .time i{
+        cursor:pointer;
+    }
+    .songInfo img{
+        opacity:0;
+        transition: opacity 1s ease-in;
+    }    
+</style>    
+<script src="https://kit.fontawesome.com/9ae6eecbf6.js" crossorigin="anonymous"></script>
+<script>
+    let songIndex=0;
+    let audioElement=new Audio('https://www.jiosaavn.com/song/tum-hi-ho/EToxUyFpcwQ');
+    let masterPlay=document.getElementById('masterPlay');
+    let myProgressBar=document.getElementById('myProgressBar');
+
+    let songs=[
+        {songName:"Tum hi Ho",filePath:"https://wynk.in/u/WeiAmqkIp",coverPath:"https://filmfare.wwmindia.com/thumb/content/2022/apr/arijitsingh11650885572.jpg?width=1200&height=900"},
+        {songName:"Pehle Bhi",filePath:"https://www.jiosaavn.com/song/pehle-bhi-main/QQ1bdBoHbms",coverPath:"https://sosimg.sgp1.cdn.digitaloceanspaces.com/artist-gallery/5759780_1682396505.jpg"},
+        {songName:"Tum hi Ho",filePath:"https://www.jiosaavn.com/song/tum-hi-ho/EToxUyFpcwQ",coverPath:"https://filmfare.wwmindia.com/thumb/content/2022/apr/arijitsingh11650885572.jpg?width=1200&height=900"},
+        {songName:"Tum hi Ho",filePath:"https://www.jiosaavn.com/song/tum-hi-ho/EToxUyFpcwQ",coverPath:"https://filmfare.wwmindia.com/thumb/content/2022/apr/arijitsingh11650885572.jpg?width=1200&height=900"},
+        {songName:"Tum hi Ho",filePath:"https://www.jiosaavn.com/song/tum-hi-ho/EToxUyFpcwQ",coverPath:"https://filmfare.wwmindia.com/thumb/content/2022/apr/arijitsingh11650885572.jpg?width=1200&height=900"},
+        {songName:"Tum hi Ho",filePath:"https://www.jiosaavn.com/song/tum-hi-ho/EToxUyFpcwQ",coverPath:"https://filmfare.wwmindia.com/thumb/content/2022/apr/arijitsingh11650885572.jpg?width=1200&height=900"},
+        {songName:"Tum hi Ho",filePath:"https://www.jiosaavn.com/song/tum-hi-ho/EToxUyFpcwQ",coverPath:"https://filmfare.wwmindia.com/thumb/content/2022/apr/arijitsingh11650885572.jpg?width=1200&height=900"},
+        {songName:"Tum hi Ho",filePath:"https://www.jiosaavn.com/song/tum-hi-ho/EToxUyFpcwQ",coverPath:"https://filmfare.wwmindia.com/thumb/content/2022/apr/arijitsingh11650885572.jpg?width=1200&height=900"},
+        {songName:"Tum hi Ho",filePath:"https://www.jiosaavn.com/song/tum-hi-ho/EToxUyFpcwQ",coverPath:"https://filmfare.wwmindia.com/thumb/content/2022/apr/arijitsingh11650885572.jpg?width=1200&height=900"},
+        {songName:"Tum hi Ho",filePath:"https://www.jiosaavn.com/song/tum-hi-ho/EToxUyFpcwQ",coverPath:"https://filmfare.wwmindia.com/thumb/content/2022/apr/arijitsingh11650885572.jpg?width=1200&height=900"},
+    ]
+    //audioElement.play();
+    masterPlay.addEventListener('click',()=>{
+        if (audioElement.paused || audioElement.currentTime<=0){
+           audioElement.play()
+        }
+    })
+
+    myProgressBar.addEventListener('timeupdate',()=>{
+        console.log('timeupdate');
+    })
+
+</script>
+</body>
+</html>
